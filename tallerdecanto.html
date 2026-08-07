@@ -114,7 +114,8 @@
             <b>Horarios</b><br> Infantil — Sábados 12:00<br> Adolescentes — Sábados 13:00<br> Adultos — Lunes 19:00<br> Adultos (Tango y Folklore) — Martes 19:00
 
             <div class="price">
-                Valor cuota: $55.000 mensuales<br> (vigente para Julio y Agosto 2026)
+                <div id="precio"></div>
+                <div id="periodo"></div>
             </div>
 
         </div>
@@ -129,6 +130,17 @@
 
     </div>
 
+    <script src="aranceles.js"></script>
+    <script>
+        const precio = ARANCELES.talleres.tallerdecanto.precio;
+        const periodo = ARANCELES.periodo;
+
+        document.getElementById("precio").innerHTML =
+            `<strong>Valor cuota: ${precio} mensuales</strong>`;
+
+        document.getElementById("periodo").innerHTML =
+            `<em>(vigente para ${periodo})</em>`;
+    </script>
 </body>
 
 </html>

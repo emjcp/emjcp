@@ -113,7 +113,8 @@
             <b>Horarios</b><br> Jueves y Viernes 17:00 a 20:00 hs<br> Sábados 9:00 a 15:00 hs.
 
             <div class="price">
-                Valor cuota: $50.000 mensuales<br> (vigente para Julio y Agosto 2026)
+                <div id="precio"></div>
+                <div id="periodo"></div>
             </div>
         </div>
 
@@ -126,7 +127,18 @@
         </div>
 
     </div>
+    <script src="aranceles.js"></script>
 
+    <script>
+        const precio = ARANCELES.talleres.tallerdeteclado.precio;
+        const periodo = ARANCELES.periodo;
+
+        document.getElementById("precio").innerHTML =
+            `<strong>Valor cuota: ${precio} mensuales</strong>`;
+
+        document.getElementById("periodo").innerHTML =
+            `<em>(vigente para ${periodo})</em>`;
+    </script>
 </body>
 
 </html>

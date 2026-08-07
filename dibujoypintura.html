@@ -117,13 +117,15 @@
             <b>Mayores de 10 años</b><br> 14:00 a 15:30 hs<br> 15:30 a 17:00 hs
 
             <div class="price">
-                Valor cuota: $35.000 mensuales<br> (vigente para Julio y Agosto 2026)
+                <div id="precioMenores"></div>
+                <div id="periodoMenores"></div>
             </div><br>
 
             <b>Adultos</b><br> 17:00 a 18:30 hs
 
             <div class="price">
-                Valor cuota: $40.000 mensuales<br> (vigente para Julio y Agosto 2026)
+                <div id="precioAdultos"></div>
+                <div id="periodoAdultos"></div>
             </div>
 
         </div>
@@ -138,7 +140,23 @@
         </div>
 
     </div>
+    <script src="aranceles.js"></script>
 
+    <script>
+        const periodo = ARANCELES.periodo;
+
+        document.getElementById("precioMenores").innerHTML =
+            `<strong>Valor cuota: ${ARANCELES.talleres.dibujoypintura.precio} mensuales</strong>`;
+
+        document.getElementById("periodoMenores").innerHTML =
+            `<em>(vigente para ${periodo})</em>`;
+
+        document.getElementById("precioAdultos").innerHTML =
+            `<strong>Valor cuota: ${ARANCELES.talleres.dibujoypinturaAdultos.precio} mensuales</strong>`;
+
+        document.getElementById("periodoAdultos").innerHTML =
+            `<em>(vigente para ${periodo})</em>`;
+    </script>
 </body>
 
 </html>
