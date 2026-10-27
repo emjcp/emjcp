@@ -9,7 +9,7 @@ Modificar únicamente los valores.
 window.ARANCELES = {
 
     // Período de vigencia de todos los aranceles
-    periodo: "Julio-Octubre 2026",
+    periodo: "Noviembre-Diciembre 2026",
 
     talleres: {
 
@@ -26,7 +26,7 @@ window.ARANCELES = {
         },
 
         tallerdeguitarra: {
-            precio: "$50.000"
+            precio: "$55.000"
         },
 
         tallerdecanto: {
@@ -34,7 +34,7 @@ window.ARANCELES = {
         },
 
         tallerdeteclado: {
-            precio: "$50.000"
+            precio: "$55.000"
         }
 
     }
